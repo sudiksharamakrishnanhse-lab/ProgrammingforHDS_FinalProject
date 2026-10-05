@@ -17,22 +17,24 @@ Why this dataset was selected:
 Variable Explanation
 
 Predicator Variables
-Gender: Categorical	Male / Female
-Age: Numeric	Age in years
-Occupation: Categorical	Person's profession
-Sleep Duration: Numeric	Hours of sleep per day
-Quality of Sleep: Ordinal	Subjective rating, 1 to 10
-Physical Activity: Level	Numeric	Minutes of activity per day
-Stress Level: Ordinal	Subjective rating, 1 to 10
-BMI Category: Categorical (ordinal)	Normal, Overweight, Obese
-Blood Pressure: Text	Stored as "systolic/diastolic" 
-Heart Rate: Numeric	Resting heart rate in bpm
-Daily Steps: Numeric	Steps per day
+1. Gender: Categorical	Male / Female
+2. Age: Numeric	Age in years
+3. Occupation: Categorical	Person's profession
+4. Sleep Duration: Numeric	Hours of sleep per day
+5. Quality of Sleep: Ordinal	Subjective rating, 1 to 10
+6. Physical Activity: Level	Numeric	Minutes of activity per day
+7. Stress Level: Ordinal	Subjective rating, 1 to 10
+8. BMI Category: Categorical (ordinal)	Normal, Overweight, Obese
+9. Blood Pressure: Text	Stored as "systolic/diastolic" 
+10. Heart Rate: Numeric	Resting heart rate in bpm
+11. Daily Steps: Numeric	Steps per day
 
 Target/Outcome Variable 
+
 Original column: Sleep Disorder with values None, Insomnia, Sleep Apnea.
 
 New binary target: Has Sleep Disorder
+
 0 - No sleep disorder (Sleep Disorder = None)
 1- Sleep disorder present (Sleep Disorder = Sleep Apnea or Insomnia)
 

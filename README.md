@@ -2,7 +2,15 @@
 Final Project for Programming in HDS Class
 
 **Predicting Sleep Disorders from Lifestyle and Health Data**
+This project builds and evaluates binary classification models that predict whether a person has a sleep disorder (insomnia or sleep apnea) from routine demographic, lifestyle, and vital-sign data.
 
+1. Project Overview
+2. Data Selection & Exploration
+3. Project Planning & Notebook Outline
+4. Pipeline Enhancements
+5. Key Findings & Intepretation
+6. Limitations
+7. 
 Dataset -	Sleep Health and Lifestyle Dataset
 
 Source URL - https://www.kaggle.com/datasets/uom190346a/sleep-health-and-lifestyle-dataset

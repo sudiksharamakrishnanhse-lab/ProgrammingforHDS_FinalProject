@@ -5,12 +5,24 @@ Final Project for Programming in HDS Class
 This project builds and evaluates binary classification models that predict whether a person has a sleep disorder (insomnia or sleep apnea) from routine demographic, lifestyle, and vital-sign data.
 
 1. Project Overview
+**Background** Sleep disorders such as insomnia and sleep apnea are common and are associated with cardiovascular, metabolic, and mental-health problems, yet many cases are never formally diagnosed.
+**Prediction Problem** The project predicts whether a person has a sleep disorder from age, gender, occupation, sleep duration, sleep quality, physical activity, stress level, BMI category, blood pressure, heart rate, and daily steps.
+**Target Variable** Has Sleep Disorder` is binary (1 = Sleep Apnea or Insomnia, 0 = None)
+
 2. Data Selection & Exploration
-3. Project Planning & Notebook Outline
-4. Pipeline Enhancements
-5. Key Findings & Intepretation
-6. Limitations
-7. 
+| Item | Detail |
+|---|---|
+| **Dataset** | Sleep Health and Lifestyle Dataset |
+| **Source URL** | https://www.kaggle.com/datasets/uom190346a/sleep-health-and-lifestyle-dataset |
+| **File** | `Sleep_health_and_lifestyle_dataset.csv` (374 rows, 13 columns) |
+| **How it is loaded** | Upload prompt in the notebook (Section 1A) |
+
+
+4. Project Planning & Notebook Outline
+5. Pipeline Enhancements
+6. Key Findings & Intepretation
+7. Limitations
+8. 
 Dataset -	Sleep Health and Lifestyle Dataset
 
 Source URL - https://www.kaggle.com/datasets/uom190346a/sleep-health-and-lifestyle-dataset

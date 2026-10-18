@@ -9,13 +9,22 @@ This project builds and evaluates binary classification models that predict whet
 **Prediction Problem** The project predicts whether a person has a sleep disorder from age, gender, occupation, sleep duration, sleep quality, physical activity, stress level, BMI category, blood pressure, heart rate, and daily steps.
 **Target Variable** Has Sleep Disorder` is binary (1 = Sleep Apnea or Insomnia, 0 = None)
 
-2. Data Selection & Exploration
-| Item | Detail |
-|---|---|
-| **Dataset** | Sleep Health and Lifestyle Dataset |
-| **Source URL** | https://www.kaggle.com/datasets/uom190346a/sleep-health-and-lifestyle-dataset |
-| **File** | `Sleep_health_and_lifestyle_dataset.csv` (374 rows, 13 columns) |
-| **How it is loaded** | Upload prompt in the notebook (Section 1A) |
+2. Data Selection
+
+**Dataset** Sleep Health and Lifestyle Dataset
+**Source URL** https://www.kaggle.com/datasets/uom190346a/sleep-health-and-lifestyle-dataset 
+**File**  `Sleep_health_and_lifestyle_dataset.csv` (374 rows, 13 columns) 
+**How it is loaded**  Upload prompt in the notebook (Section 1A) 
+**Why it was selected.** The dataset meets the size and feature requirements, mixes numeric, ordinal, and categorical variables, and uses interpretable features (stress, activity, BMI, blood pressure).
+
+3. Dataset Exploration 
+- Import into Google Colab: Section 1A (upload prompt) 
+- Dataset structure: Section 1B (`df.info()`) 
+- Target variable: Section 2 (`Has Sleep Disorder`) 
+- Predictor variables: Table below 
+- Descriptive statistics: Section 3 (describe, variance, IQR, skewness, category counts, target balance) 
+- Exploratory visualizations: Section 4 (sleep disorder status by BMI category, sleep duration histogram, Phi-K correlation heatmap covering numeric and categorical variables)
+- Inferential analysis: Section 5 (Mann-Whitney U test and chi-square test)
 
 
 4. Project Planning & Notebook Outline
@@ -23,15 +32,7 @@ This project builds and evaluates binary classification models that predict whet
 6. Key Findings & Intepretation
 7. Limitations
 8. 
-Dataset -	Sleep Health and Lifestyle Dataset
 
-Source URL - https://www.kaggle.com/datasets/uom190346a/sleep-health-and-lifestyle-dataset
-
-File - Sleep_health_and_lifestyle_dataset.csv
-
-Why this dataset was selected: 
-1. It meets the technical requirements. About 374 records and 11 predictors, with a clear path to a binary target. Recoded outcome variable for binary classification.
-2. The question is meaningful. Sleep disorders are common and often undiagnosed, so screening from routine data is a practical question.
 
 
 Variable Explanation

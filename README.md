@@ -10,7 +10,7 @@ This project builds and evaluates binary classification models that predict whet
 **Prediction Problem** The project predicts whether a person has a sleep disorder from age, gender, occupation, sleep duration, sleep quality, physical activity, stress level, BMI category, blood pressure, heart rate, and daily steps.
 **Target Variable** Has Sleep Disorder` is binary (1 = Sleep Apnea or Insomnia, 0 = None)
 
-3. Data Selection
+2. Data Selection
 
 **Dataset** Sleep Health and Lifestyle Dataset
 **Source URL** https://www.kaggle.com/datasets/uom190346a/sleep-health-and-lifestyle-dataset 
@@ -18,7 +18,22 @@ This project builds and evaluates binary classification models that predict whet
 **How it is loaded**  Upload prompt in the notebook (Section 1A) 
 **Why it was selected.** The dataset meets the size and feature requirements, mixes numeric, ordinal, and categorical variables, and uses interpretable features (stress, activity, BMI, blood pressure).
 
-3. Dataset Exploration 
+3. Requirements and Dependencies
+
+**Platform.** The notebook is designed for Google Colab. The notebook can also run in a local Jupyter environment with Python 3.10 or later.
+**Packages** Packages needed if using a local Jupyter notebook are listed in `requirements_finalproject.txt`. This can be downloaded and installed.
+**Jupyter notebook specific** If using a local Jupyter notebook, one line needs to be replaced in the file upload cell (Section 1A). The collab upload prompt (uploaded = files.upload()) is replaced with (filename = "Sleep_health_and_lifestyle_dataset.csv"). Make sure to put the data csv file in the same path as the Jupyter notebook. 
+
+
+3. Execution Instructions
+  
+1. Open Github repo (https://github.com/sudiksharamakrishnanhse-lab/ProgrammingforHDS_FinalProject/tree/main) and download `Sleep_health_and_lifestyle_dataset.csv`, `requirements_finalproject.txt`, and `FinalProject_ProgrammingforHDS_SR.ipynb`
+2. Open Google Colab and load the notebook with **`Sleep_health_and_lifestyle_dataset.csv`, then Upload notebook**. 
+3. All cells are run in order with **Runtime, then Run all** (or one at a time from top to bottom).
+4. At Section 1A, the run pauses and a **Choose Files** button appears. The file `Sleep_health_and_lifestyle_dataset.csv` is selected, and the run continues after the upload completes.
+5. The remaining sections run without further input. The whole notebook takes roughly 40 seconds to 1 minute to fully run. 
+
+4. Dataset Exploration 
 - Import into Google Colab: Section 1A (upload prompt) 
 - Dataset structure: Section 1B (`df.info()`) 
 - Target variable: Section 2 (`Has Sleep Disorder`) 
@@ -26,17 +41,6 @@ This project builds and evaluates binary classification models that predict whet
 - Descriptive statistics: Section 3 (describe, variance, IQR, skewness, category counts, target balance) 
 - Exploratory visualizations: Section 4 (sleep disorder status by BMI category, sleep duration histogram, Phi-K correlation heatmap covering numeric and categorical variables)
 - Inferential analysis: Section 5 (Mann-Whitney U test and chi-square test)
-
-
-4. Project Planning & Notebook Outline
-5. Pipeline Enhancements
-6. Key Findings & Intepretation
-7. Limitations
-8. 
-
-
-
-Variable Explanation
 
 Predicator Variables
 1. Gender: Categorical	Male / Female
@@ -51,26 +55,25 @@ Predicator Variables
 10. Heart Rate: Numeric	Resting heart rate in bpm
 11. Daily Steps: Numeric	Steps per day
 
-Target/Outcome Variable 
 
-Original column: Sleep Disorder with values None, Insomnia, Sleep Apnea.
+5. Project Planning & Notebook Outline
 
-New binary target: Has Sleep Disorder
+**Evaluation Metrics**
+- Recall (sensitivity): In screening, a missed case costs more than a false alarm.
+- F1-score: Balances recall against precision.
+- ROC-AUC: Threshold-independent measure of separation.
+- Precision, specificity, balanced accuracy, MCC, PR-AUC: Show how the model handles false alarms.
+- Accuracy: Can mislead if classes are uneven.
 
-0 - No sleep disorder (Sleep Disorder = None)
-1- Sleep disorder present (Sleep Disorder = Sleep Apnea or Insomnia)
 
 
-Project Planning 
+5. Pipeline Enhancements
+6. Key Findings & Intepretation
+7. Limitations
+8. Execution Instructions
 
-Proposed Prediction Problem: Can routinely available demographic, lifestyle, and vital-sign information be used to predict whether a person has a sleep disorder?
 
-Preprocessing Steps
-1. Drop Person ID and the original Sleep Disorder column from the predictors.
-2. Standardize BMI category labels.
-3. Split Blood Pressure into Systolic and Diastolic.
-4. Scale numeric features for logistic regression, SVM, and KNN.
-5. Recode Sleep Disorder Value as binary
+
 
 Potential Challenges 
 1. Small sample size- Performance estimates are unstable

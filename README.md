@@ -126,7 +126,7 @@ Five enhancements go beyond the required components.
 **Phi-K associations.** Systolic pressure (0.91), diastolic pressure (0.90), sleep duration (0.87), and age (0.82) show the strongest associations with the outcome; BMI category (0.54) is moderate and gender (0.42) is the weakest.
 
 **Model Performance**
-The four models are close: their cross-validated F1 scores differ by at most 0.020, while the fold-to-fold standard deviations are 0.044 to 0.081. Logistic Regression, Random Forest, and Gradient Boosting made identical predictions for all 91 test people, and the Decision Tree differed on 4. The fold-level comparison (Enhancement 4) shows no consistent leader: the best score changes from fold to fold, and each model's F1 ranges over 0.12 to 0.25 across folds. The selected model flagged 50 of 53 people with a disorder and wrongly flagged 5 of 38 healthy people.
+The four models are close: their cross-validated F1 scores differ by at most 0.020, while the fold-to-fold standard deviations are 0.044 to 0.081. Logistic Regression, Random Forest, and Gradient Boosting made identical predictions for all 91 test people, and the Decision Tree differed on 4. The fold-level comparison (Enhancement 4) shows no consistent leader: the best score changes from fold to fold, and each model's F1 ranges over 0.12 to 0.25 across folds. 
 
 **Important features.** In the selected Random Forest, BMI category is the largest single contributor (about 30% of importance), and the blood pressure variables together contribute about 40%. Gender contributes almost nothing (about 0.6%), and quality of sleep and stress contribute modest shares (about 4% and 2%).
 
